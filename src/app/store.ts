@@ -6,6 +6,7 @@ import { userApi } from '../feature/users';
 import { orderApi } from '../feature/order';
 import { addressApi } from '../feature/address';
 import { sharedApi } from '../feature/shared';
+import { paymentApi } from '../feature/payment';
 
 export const store = configureStore({
   reducer: {
@@ -15,9 +16,17 @@ export const store = configureStore({
     [userApi.reducerPath]: userApi.reducer,
     [addressApi.reducerPath]: addressApi.reducer,
     [sharedApi.reducerPath]: sharedApi.reducer,
+    [paymentApi.reducerPath]: paymentApi.reducer
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(loginApi.middleware, orderApi.middleware, userApi.middleware,addressApi.middleware, sharedApi.middleware),
+    getDefaultMiddleware().concat(
+      loginApi.middleware,
+      orderApi.middleware,
+      userApi.middleware,
+      addressApi.middleware,
+      sharedApi.middleware,
+      paymentApi.middleware,
+    ),
 });
 
 export type AppDispatch = typeof store.dispatch;

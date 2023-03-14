@@ -18,6 +18,7 @@ import * as Yup from 'yup';
 import { FormProvider, RHFTextField } from '../../components';
 import { RecentOrderList } from '../../feature/order';
 import { Menu } from 'react-feather';
+import { TransactionList } from '../../feature/payment';
 
 type FormValuesProps = {
     email: string;
@@ -317,9 +318,9 @@ export default function Payment() {
             </Dialog>
             <br />
             <Typography variant="h4" component="h1" paragraph>
-                Recent orders
+                Recent Transitions
             </Typography>
-            <RecentOrderList />
+            <TransactionList />
         </section >
     );
 }
