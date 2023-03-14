@@ -1,0 +1,39 @@
+.hero-title {
+    font-weight: 500;
+    font-size: 40;
+    text-align: center;
+    color: #000000;
+    font: DM Sans;
+}
+
+.hero-description {
+    font-weight: 400;
+    font-size: 14;
+    text-align: center;
+}
+
+.login-card-title {
+    font-weight: 700;
+    font-size: 28;
+    text-align: start;
+    color: #393939;
+}
+
+.login-card-body{
+    font-weight: 400;
+    font-size: 14;
+    text-align: start;
+    color: #404040;
+}
+
+
+
+@media only screen and (max-width: 1150px) {
+    .hero-section {
+        display: none;
+    }
+}
+
+.inputRounded .MuiOutlinedInput-root {
+    border-radius: 10px;
+}

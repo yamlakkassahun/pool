@@ -1,0 +1,11 @@
+.carousel-indicators li {
+    display: inline-block;
+    text-indent: 0;
+    cursor: pointer;
+    background-color: gray;
+    padding: 1px;
+
+}
+.carousel-indicators .active {
+    background-color: #053582;
+}

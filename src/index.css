@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=DM Sans');
+
+body {
+   font-family: 'DM Sans', serif;
+}
+
+.MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+    outline: none !important;
+    border: none !important;
+}
+
+.side-nav {
+    fill: gray;
+}
+
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: red;
+}
+
+tr
+{
+  background-color: #FFFFFF;
+  color:black;
+  border-bottom: 1pt solid lightgray;
+}
+
+
+#app {
+    background-color: #F5F5F3;
+}
+
+
+
+.MuiPaper-root-MuiDrawer-paper, 
+.MuiDataGrid-footerContainer, 
+.MuiDataGrid-root, 
+.MuiDataGrid-row, 
+.MuiDataGrid-column, 
+.MuiDataGrid {
+    border: 0 !important;
+}
+
+.main-wrapper {
+    background-color: #F5F5F3;
+}
+
+.card {
+    background-color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu-body {
+        display: none;
+    }
+    .payment-card{
+        border-right: solid 1px red;
+     }
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgb(245, 243, 243);
+ }
+
+ .payment-card {
+    border-right: solid 1px lightgray;
+ }
+
+.nav-link{
+    border: none;
+}
