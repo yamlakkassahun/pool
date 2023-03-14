@@ -7,6 +7,7 @@ import GooglePlacesAutocomplete, { geocodeByAddress, getLatLng } from 'react-goo
 import { LoadingButton } from '@mui/lab';
 import * as Yup from 'yup';
 import { useGetAllDeliveryPlansQuery } from '../../../shared/services/SharedSlice';
+import { environment } from '../../../../data/global';
 
 
 type Props = {
@@ -225,7 +226,7 @@ const CreateOrderStepStart = ({ formData, setFormData, nextStep, step }: Props) 
                 <div className='row'>
                     <div className='col-md-7'>
                         <GooglePlacesAutocomplete
-                            apiKey="AIzaSyCGPY_hsHcarYRmtuyvZCTOyoRWGN7-JGA"
+                            apiKey={`${environment.google_api_key}`}
                             selectProps={{
                                 placeholder: 'Pick Up Location ...',
                                 pickUpLocation,
@@ -261,7 +262,7 @@ const CreateOrderStepStart = ({ formData, setFormData, nextStep, step }: Props) 
                             </CardContent>
                         </Card>
                         <GooglePlacesAutocomplete
-                            apiKey="AIzaSyCGPY_hsHcarYRmtuyvZCTOyoRWGN7-JGA"
+                            apiKey={`${environment.google_api_key}`}
                             selectProps={{
                                 dropLocation,
                                 onChange: getDropLocation,
